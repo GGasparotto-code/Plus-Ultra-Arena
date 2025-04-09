@@ -1,0 +1,89 @@
+body {
+    background: url("./assets/background.jpg") no-repeat center
+      center fixed; /* Define a imagem de fundo, centraliza e a fixa na tela */
+    background-size: cover; /* Garante que a imagem cubra todo o body */
+    font-family: "Gabarito", sans-serif; /* Define a fonte do texto */
+    margin: 1.25rem; /* Define a margem externa do body */
+}
+
+/* Scrollbar Styles */
+body::-webkit-scrollbar {
+    width: 0.625rem; /* Define a largura da barra de rolagem */
+}
+
+body::-webkit-scrollbar-track {
+    background: black; /* Define a cor de fundo da área da barra de rolagem */
+}
+  
+body::-webkit-scrollbar-thumb {
+    background: #DD171F; /* Define a cor do "polegar" da barra de rolagem */
+    border-radius: 0.625rem; /* Define o raio da borda para arredondar o "polegar" */
+}
+
+/* Caixa principal do jogo */
+.conteudo-jogo {
+    background: rgba(0, 0, 0, 0.7); /* Define o fundo com transparência */
+    box-shadow: 0 0 5px #DD171F; /* Adiciona uma sombra à caixa */
+    margin: 1.875rem; /* Define a margem externa */
+    padding: 1.25rem; /* Define o preenchimento interno */
+    display: flex; /* Usa flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    margin-top: 2rem; /* Define a margem superior */
+}
+  
+.conteudo-jogo:hover {
+    box-shadow: 0 0 0.313rem #19caca; /* Altera a sombra ao passar o mouse */
+}
+  
+/* Títulos e textos */
+h2,
+p {
+    color: white; /* Define a cor do texto como branco */
+}
+
+.titulo img {
+    height: 4.375rem; /* Define a altura da imagem */
+    width: 4.375rem; /* Define a largura da imagem */
+    margin-left: 1.875rem; /* Define a margem à esquerda */
+    margin-bottom: 0; /* Remove a margem inferior */
+}
+  
+button {
+    padding: 0.625rem 1.25rem; /* Define o preenchimento interno do botão */
+    margin: 0.625rem; /* Define a margem externa do botão */
+    border: none; /* Remove a borda do botão */
+    background: #DD171F; /* Define a cor de fundo do botão */
+    color: white; /* Define a cor do texto do botão */
+    cursor: pointer; /* Define o cursor como uma mão */
+    transition: background 0.3s; /* Adiciona uma transição suave para a cor de fundo */
+}
+  
+button:hover {
+    background: #19caca; /* Altera a cor de fundo ao passar o mouse */
+}
+
+#tabelaJogador {
+    border-collapse: collapse; /* Colapsa as bordas da tabela */
+    width: 100%; /* Define a largura da tabela como 100% do container */
+    border: 1px solid #dddddd; /* Adiciona uma borda à tabela */
+    text-align: left; /* Alinha o texto à esquerda */
+    padding: 0.5rem; /* Define o preenchimento interno das células */
+    color: white; /* Cor do texto */
+}
+
+#tabelaJogador tfoot {
+    font-weight: 600; /* Define o peso da fonte do rodapé da tabela como negrito */
+}
+
+#tabelaComputador {
+    border-collapse: collapse; /* Colapsa as bordas da tabela */
+    width: 100%; /* Define a largura da tabela como 100% do container */
+    border: 1px solid #dddddd; /* Adiciona uma borda à tabela */
+    text-align: left; /* Alinha o texto à esquerda */
+    padding: 0.5rem; /* Define o preenchimento interno das células */
+    color: white; /* Cor do texto */
+}
+
+#tabelaComputador tfoot {
+    font-weight: 600; /* Define o peso da fonte do rodapé da tabela como negrito */
+}

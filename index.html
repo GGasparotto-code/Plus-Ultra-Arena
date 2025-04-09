@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/arena-icon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Plus Ultra Arena</title>
+</head>
+<body>
+    <body>
+      
+        <div class="titulo">
+          <img src="./assets/logo.png" alt="logo">
+        </div>
+      
+        <main class="conteudo-jogo">
+          <div id="container">
+            <h2>Escolha 3 heróis para seu time:</h2>
+            <button onclick="iniciarBatalha()">Iniciar Batalha</button>
+            <p id="informacoesJogador" class="resultado"></p>
+            <p id="informacoesComputador" class="resultado"></p>
+            <button id="resultadoBtn" onclick="verResultado()">Ver Resultados</button>
+            <h1 id="resultadoFinal" class="resultado"></h1>
+
+            <table id="tabelaJogador">
+                <thead>
+                    <tr>
+                        <th>Heróis</th>
+                        <th>Força</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total</td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+            
+            <table id="tabelaComputador">
+                <thead>
+                    <tr>
+                        <th>Vilões</th>
+                        <th>Força</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total</td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </main>
+
+        <script src="script.js"></script>
+</body>
+</html>
